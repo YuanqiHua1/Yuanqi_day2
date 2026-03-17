@@ -15,7 +15,7 @@ class GameRunner:
     def answer(self):
         total = 0
         for die in self.dice:
-            total += 1
+            total += die.value
         return total
 
     @classmethod
@@ -57,4 +57,4 @@ class GameRunner:
             if prompt == 'y' or prompt == '':
                 continue
             else:
-                i_just_throw_an_exception()
+                break
